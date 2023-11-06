@@ -4,8 +4,8 @@
 #
 
 # source aliases and configs local to machine
-source $HOME/.aliases
-source $home/.zshrc.local
+source ${HOME}/.aliases
+source ${HOME}/.zshrc.local
 
 # Zsh options.
 setopt extended_glob
