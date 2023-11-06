@@ -3,6 +3,10 @@
 # .zshrc - Zsh file loaded on interactive shell sessions.
 #
 
+# source aliases and configs local to machine
+source $HOME/.aliases
+source $home/.zshrc.local
+
 # Zsh options.
 setopt extended_glob
 
