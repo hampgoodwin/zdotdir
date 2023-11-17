@@ -3,9 +3,12 @@
 # .zshrc - Zsh file loaded on interactive shell sessions.
 #
 
-# source aliases and configs local to machine
-source ${HOME}/.aliases
-source ${HOME}/.zshrc.local
+# path additions
+## nvm for managing node versions. Since mason-install-tools installs
+## various tools which require node, we need this as a pre-req to any
+## cfg
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Zsh options.
 setopt extended_glob
@@ -25,6 +28,15 @@ autoload -Uz $fpath[1]/*(.:t)
 # Create an amazing Zsh config using antidote plugins.
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
+
+# source aliases and configs local to machine
+if [[ -f "${HOME}/.aliases" ]]; then 
+    source "${HOME}"/.aliases
+fi
+source ${HOME}/.aliases
+if [[ -f "${HOME}/.zshrc.local" ]]; then
+    source "${HOME}/.zshrc.local"
+fi
 
 # start zellij on load, in the z sessions
 if [[ -z "$ZELLIJ" ]]; then
