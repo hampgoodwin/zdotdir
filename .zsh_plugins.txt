@@ -29,7 +29,7 @@ https://github.com/peterhurford/up.zsh
 rummik/zsh-tailf
 mattmc3/zman
 agkozak/zsh-z
-
+fdellwin/zsh-bat
 
 ### Local Plugins
 #
