@@ -28,6 +28,8 @@ autoload -Uz $fpath[1]/*(.:t)
 # Create an amazing Zsh config using antidote plugins.
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
+bindkey '\eOA' history-substring-search-up # or ^[OA
+bindkey '\eOB' history-substring-search-down # or ^[OB
 
 # source aliases and configs local to machine
 if [[ -f "${HOME}/.aliases" ]]; then 
