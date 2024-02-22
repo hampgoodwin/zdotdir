@@ -41,6 +41,9 @@ if [[ -f "${HOME}/.zshrc.local" ]]; then
     source "${HOME}/.zshrc.local"
 fi
 
+# load zoxide
+eval "$(zoxide init --cmd cd zsh)"
+
 # start zellij on load, in the z sessions
 if [[ -z "$ZELLIJ" ]]; then
     if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
