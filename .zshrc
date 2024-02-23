@@ -41,7 +41,7 @@ if [[ -f "${HOME}/.zshrc.local" ]]; then
     source "${HOME}/.zshrc.local"
 fi
 
-# load zoxide
+# load zoxide # should get completions because antidote above runs compinit
 eval "$(zoxide init --cmd cd zsh)"
 
 # start zellij on load, in the z sessions
