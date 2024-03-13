@@ -36,7 +36,6 @@ bindkey '\eOB' history-substring-search-down # or ^[OB
 if [[ -f "${HOME}/.aliases" ]]; then 
     source "${HOME}"/.aliases
 fi
-source ${HOME}/.aliases
 if [[ -f "${HOME}/.zshrc.local" ]]; then
     source "${HOME}/.zshrc.local"
 fi
