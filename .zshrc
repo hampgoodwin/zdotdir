@@ -36,6 +36,7 @@ autoload -Uz $fpath[1]/*(.:t)
 # Create an amazing Zsh config using antidote plugins.
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
+bindkey "^R" history-incremental-pattern-search-backward
 bindkey '\eOA' history-substring-search-up # or ^[OA
 bindkey '\eOB' history-substring-search-down # or ^[OB
 
