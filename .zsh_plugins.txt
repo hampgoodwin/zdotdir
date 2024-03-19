@@ -37,6 +37,7 @@ agkozak/zsh-z
 #
 ###
 $ZDOTDIR/.aliases kind:defer
+$ZDOTDIR/.minikube-completion.zsh kind:defer
 #$ZDOTDIR/custom/plugins/example
 
 ### Local Plugins with Variables
