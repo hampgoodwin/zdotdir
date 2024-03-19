@@ -75,10 +75,10 @@ $ZDOTDIR/.minikube-completion.zsh kind:defer
 ###
 
 # Use kind:fpath for prompts you want available to promptinit.
-romkatv/powerlevel10k kind:fpath
+romkatv/powerlevel10k
 
 # Or, just load a prompt plugin the normal way.
-sindresorhus/pure
+# sindresorhus/pure
 
 
 ### Utilities
