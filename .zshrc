@@ -12,6 +12,8 @@ fi
 
 # path additions
 export BAT_THEME=Catppuccin-macchiato
+export EDITOR=nvim
+export VISUAL=nvim
 ## nvm for managing node versions. Since mason-install-tools installs
 ## various tools which require node, we need this as a pre-req to any
 ## cfg
