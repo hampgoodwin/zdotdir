@@ -52,6 +52,7 @@ fi
 
 # load zoxide # should get completions because antidote above runs compinit
 eval "$(zoxide init --cmd cd zsh)"
+eval "$(fzf --zsh)"
 
 # start zellij on load, in the z sessions
 if [[ -z "$ZELLIJ" ]]; then
