@@ -80,11 +80,14 @@ compdef ggpnp=git
 
 # mask built-ins with better defaults
 alias vi=vim
+alias vim=nvim
 
 # more ways to ls
 alias ll='ls -lh'
 alias la='ls -lAh'
 alias ldot='ls -ld .*'
+# eza ls 
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 
 # fix common typos
 alias quit='exit'
