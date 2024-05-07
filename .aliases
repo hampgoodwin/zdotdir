@@ -87,7 +87,7 @@ alias ll='ls -lh'
 alias la='ls -lAh'
 alias ldot='ls -ld .*'
 # eza ls 
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time"
 
 # fix common typos
 alias quit='exit'
