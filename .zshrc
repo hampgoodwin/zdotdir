@@ -41,7 +41,7 @@ fi
 
 # load toolings
 # load fzf
-eval "$(fzf --zsh)"
+source <(fzf --zsh)
 # --- setup fzf theme ---
 # catppuccin macchiatto https://github.com/catppuccin/fzf
 export FZF_DEFAULT_OPTS=" \
