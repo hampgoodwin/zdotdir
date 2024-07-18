@@ -88,6 +88,7 @@ _fzf_comprun() {
 
 # load zoxide # should get completions because antidote above runs compinit
 eval "$(zoxide init --cmd cd zsh)"
+eval "$(ssh-agent -s)"
 # -- Use fd instead of fzf --
 
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
