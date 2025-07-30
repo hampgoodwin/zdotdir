@@ -5,7 +5,7 @@
 #
 
 # path additions
-export BAT_THEME="Catppuccin Macchiato"
+export BAT_THEME="Catppuccin Frappe"
 
 ## nvm for managing node versions. Since mason-install-tools installs
 ## various tools which require node, we need this as a pre-req to any
