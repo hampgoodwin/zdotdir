@@ -7,12 +7,6 @@
 # path additions
 export BAT_THEME="Catppuccin Frappe"
 
-## nvm for managing node versions. Since mason-install-tools installs
-## various tools which require node, we need this as a pre-req to any
-## cfg
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
 # Zsh options.
 setopt extended_glob
 
