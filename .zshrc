@@ -28,3 +28,7 @@ for _rc in ${ZDOTDIR:-$HOME}/.zshrc.d/*.zsh; do
   fi
 done
 unset _rc
+
+
+# Configurations
+unsetopt LIST_BEEP
