@@ -46,3 +46,8 @@ export FZF_DEFAULT_OPTS=" \
 --color=marker:#BABBF1,fg+:#C6D0F5,prompt:#CA9EE6,hl+:#E78284 \
 --color=selected-bg:#51576D \
 --color=border:#737994,label:#C6D0F5"
+
+if command -v fzf-share >/dev/null; then
+  source "$(fzf-share)/key-bindings.zsh"
+  source "$(fzf-share)/completion.zsh"
+fi
