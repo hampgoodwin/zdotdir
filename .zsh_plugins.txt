@@ -11,7 +11,6 @@ ohmyzsh/ohmyzsh path:plugins/buf
 ohmyzsh/ohmyzsh path:plugins/docker
 ohmyzsh/ohmyzsh path:plugins/git
 ohmyzsh/ohmyzsh path:plugins/kubectl
-ohmyzsh/ohmyzsh path:plugins/zoxide
 
 # Completion styles
 belak/zsh-utils path:completion/functions kind:autoload post:compstyle_zshzoo_setup
