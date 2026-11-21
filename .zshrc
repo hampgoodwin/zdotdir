@@ -16,6 +16,11 @@ if [[ ! -d ${ZDOTDIR:-$HOME}/.antidote ]]; then
   git clone -b v2.3.0 https://github.com/mattmc3/antidote ${ZDOTDIR:-$HOME}/.antidote
 fi
 
+# Ensure ZSH_CACHE_DIR exists for Oh-My-Zsh plugins loaded via antidote.
+export ZSH_CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/zsh"
+[[ -d "$ZSH_CACHE_DIR/completions" ]] || mkdir -p "$ZSH_CACHE_DIR/completions"
+fpath=("$ZSH_CACHE_DIR/completions" $fpath)
+
 # Create an amazing Zsh config using antidote plugins.
 source ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh
 antidote load
